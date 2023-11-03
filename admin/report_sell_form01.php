@@ -115,20 +115,12 @@ body {
                     <td colspan="2" class="y" align="right">
                     ส่วนลด    
                     <br>
-                    รวมเป็นเงิน(ก่อนรวม Vat)     
-                    <br>
-                    <?php $vat = ($fullsum*7)/107; ?>
-                    ภาษีมูลค่าเพิ่ม 7%
-                    <br>
                     จำนวนเงินทั้งสิน 
                     </td>
                     
                     <td class="y" align="right" width="200">
                     &#3647; <?php echo number_format(0.00 , 2) ?><br>
-                    &#3647; <?php echo number_format($fullsum, 2); ?>
-                    <br>
-                    &#3647; <?php echo number_format($vat, 2); ?><br>
-                    &#3647; <?php echo number_format($fullsum+$vat+$x, 2); ?>
+                    &#3647; <?php echo number_format($fullsum+$x, 2); ?>
                     </td>
                 </tr>
                         </tbody>

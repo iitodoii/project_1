@@ -12,6 +12,8 @@ if(isset($_POST["save"])){ //เมื่อกดปุ่ม save
     @$firstname = $_POST['firstname'];
     @$lastname = $_POST['lastname'];
     @$tel = $_POST['tel'];
+    @$address = $_POST['address'];
+    @$email = $_POST['email'];
     @$userlevel = $_POST['userlevel'];
 
     $sql3 = "SELECT * FROM user 
@@ -24,7 +26,7 @@ if(isset($_POST["save"])){ //เมื่อกดปุ่ม save
     if($password == ''){
         $pass = $password01;
         //คำสั่ง sql
-        @$sql1 = "UPDATE user SET Username ='$username' ,Password ='$pass',Firstname ='$firstname'
+        @$sql1 = "UPDATE user SET Username ='$username' ,Password ='$pass',Firstname ='$firstname',Add_user ='$address',email ='$email'
         ,Lastname ='$lastname',Tel='$tel',Userlevel='$userlevel'
         Where ID = '$ID'";
 
@@ -34,7 +36,7 @@ if(isset($_POST["save"])){ //เมื่อกดปุ่ม save
         }   
     else{
     //คำสั่ง sql
-    @$sql1 = "UPDATE user SET Username ='$username' ,Password ='$password',Firstname ='$firstname'
+    @$sql1 = "UPDATE user SET Username ='$username' ,Password ='$password',Firstname ='$firstname',Add_user ='$address',email ='$email'
     ,Lastname ='$lastname',Tel='$tel',Userlevel='$userlevel'
     Where ID = '$ID'";
     

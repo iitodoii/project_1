@@ -55,7 +55,7 @@ body{
         <div class="form-group ">
               <div class="form-group y">
               <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="font-weight-bold" for="username">Email</label>
+                  <label class="font-weight-bold" for="username">ชื่อผู้ใช้</label>
                   <input type="text" id="username" class="form-control"  value="<?php echo $result['Username']?>" name="username" required>
                   <input type="hidden" id="ID" class="form-control"  value="<?php echo $result['ID']?>" name="ID" required >
                 </div>
@@ -88,6 +88,18 @@ body{
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="font-weight-bold" for="tel">เบอร์โทรศัพท์</label>
                   <input type="text" id="tel" class="form-control" value="<?php echo $result['Tel']?>" name="tel" required >
+                </div>
+              </div>
+              <div class="form-group y">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="font-weight-bold" for="address">ที่อยู่</label>
+                  <input type="text" id="address" class="form-control" value="<?php echo $result['Add_user']?>" name="address" required >
+                </div>
+              </div>
+              <div class="form-group y">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="font-weight-bold" for="email">email</label>
+                  <input type="email" id="email" class="form-control" value="<?php echo $result['email']?>" name="email" required >
                 </div>
               </div>
               <br>

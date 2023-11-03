@@ -23,7 +23,7 @@ body {
                     </li>
                     <li>
                         <a href="index_admin.php?p=user" class="nav-link text-dark px-0 align-middle">
-                        <i class="fa-sharp fa-solid fa-user-group"></i> <span class="ms-1 d-none d-sm-inline">สมาชิก</span>
+                        <i class="fa-sharp fa-solid fa-user-group"></i> <span class="ms-1 d-none d-sm-inline">จัดการข้อมูลผู้ใช้งาน</span>
                         </a>
                     </li>
                     <li>
@@ -38,28 +38,28 @@ body {
                     </li>
                     <li class="nav-item">
                         <a href="index_admin.php?p=slide" class="nav-link text-dark align-middle px-0">
-                        <i class="fa-solid fa-image"></i> <span class="ms-1 d-none d-sm-inline">ภาพสไลด์</span>
+                        <i class="fa-solid fa-image"></i> <span class="ms-1 d-none d-sm-inline">จัดการภาพสไลด์</span>
                         </a>
                     </li>
                     <li>
                         <a href="index_admin.php?p=sell" class="nav-link text-dark px-0 align-middle">
-                        <i class="fa-solid fa-list"></i> <span class="ms-1 d-none d-sm-inline">รายการสั่งซื้อ</span>
+                        <i class="fa-solid fa-list"></i> <span class="ms-1 d-none d-sm-inline">จัดการรายการสั่งซื้อ</span>
                         </a>
                     </li>
                     
                     <li>
                         <a href="../index.php" class="nav-link text-dark px-0 align-middle">
-                        <i class="fa-solid fa-shop"></i> <span class="ms-1 d-none d-sm-inline">หน้าร้านค้า</span>
+                        <i class="fa-solid fa-shop"></i> <span class="ms-1 d-none d-sm-inline">จัดการหน้าร้านค้า</span>
                         </a>
                     </li>
                     <li>
                         <a href="index_admin.php?p=re" class="nav-link px-0 text-dark align-middle">
-                        <i class="fa-solid fa-server"></i> <span class="ms-1 d-none d-sm-inline">ประวัติการสั่งซื้อ</span>
+                        <i class="fa-solid fa-server"></i> <span class="ms-1 d-none d-sm-inline">จัดการประวัติการสั่งซื้อ</span>
                         </a>
                     </li>
                     <li>
                         <a href="index_admin.php?p=connect" class="nav-link px-0 text-dark align-middle">
-                        <i class="fa-solid fa-city"></i> <span class="ms-1 d-none d-sm-inline">ข้อมูลของร้าน</span>
+                        <i class="fa-solid fa-city"></i> <span class="ms-1 d-none d-sm-inline">จัดการข้อมูลของร้าน</span>
                         </a>
                     </li>
                     <!-- <li>

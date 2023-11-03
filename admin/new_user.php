@@ -43,8 +43,8 @@ body{
 				<form class="login100-form validate-form" name ="form1" method="post" action="new_user.php" class="p-5 bg-white">
               <div class="form-group ">
                 <div class="mb-3 mb-md-2">
-                  <label class="font-weight-bold" for="username">Email</label>
-                  <input type="email" id="username" class="form-control" name="username" required >
+                  <label class="font-weight-bold" for="username">ชื่อผู้ใช้</label>
+                  <input type="text" id="username" class="form-control" name="username" required >
                 </div>
               </div>
               <div class="form-group ">
@@ -69,6 +69,18 @@ body{
                 <div class="mb-3 mb-md-2">
                   <label class="font-weight-bold" for="tel">เบอร์โทรศัพท์</label>
                   <input type="text" id="tel" class="form-control" name="tel" required >
+                </div>
+              </div>
+              <div class="form-group ">
+                <div class="mb-3 mb-md-2">
+                  <label class="font-weight-bold" for="address">ที่อยู่</label>
+                  <input type="text" id="address" class="form-control" name="address" required >
+                </div>
+              </div>
+              <div class="form-group ">
+                <div class="mb-3 mb-md-2">
+                  <label class="font-weight-bold" for="username">email</label>
+                  <input type="email" id="email" class="form-control" name="email" required >
                 </div>
               </div>
               <div class="form-group ">
@@ -107,6 +119,8 @@ if(isset($_POST["save"])){ //เมื่อกดปุ่ม save
     @$firstname = $_POST['firstname'];
     @$lastname = $_POST['lastname'];
     @$tel = $_POST['tel'];
+    @$address = $_POST['address'];
+    @$email = $_POST['email'];
     @$userlevel = $_POST['userlevel'];
 
     $pass = $password; 
@@ -121,8 +135,8 @@ if(isset($_POST["save"])){ //เมื่อกดปุ่ม save
     }
 
     //คำสั่ง sql
-    @$sql1 = "INSERT INTO user(ID,Username,Password,Firstname,Lastname,Tel,Userlevel)
-         VALUES (null,'$username','$pass','$firstname','$lastname','$tel','$userlevel')";
+    @$sql1 = "INSERT INTO user(Username,Password,Firstname,Lastname,Tel,Add_user,email,Userlevel)
+         VALUES ('$username','$pass','$firstname','$lastname','$tel','$address','$email','$userlevel')";
     
         if(mysqli_query($conn,$sql1)){ 
           echo "<script>alert('บันทึก');window.location='index_admin.php?p=user';</script>";

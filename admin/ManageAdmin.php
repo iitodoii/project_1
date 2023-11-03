@@ -30,7 +30,7 @@ body {
                             <div class="header">
                             <div class="card">
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"> 
-                                <h3 class="title">จัดการบัญชี</h3>
+                                <h3 class="title">จัดการข้อมูลผู้ใช้งาน</h3>
                                 <a href="index_admin.php?p=new" class="pull-right btn btn-primary"><span class="glyphicon glyphicon-plus"></span> เพิ่มสมาชิก</a>
                             </div>
                             
@@ -51,6 +51,8 @@ body {
                                     	<th width="15%"><b>ชื่อ</b></th>
                                     	<th width="15%"><b>นามสกุล</b></th>
                                     	<th width="15%"><b>เบอร์โทร</b></th>
+                                    	<th width="15%"><b>อีเมล์</b></th>
+                                    	<th width="15%"><b>ที่อยู่</b></th>
                                         <th width="15%"><b>สถานะ</b></th>
                                         <th width="15%"><b>แก้ไข</b></th>
                                     </thead>
@@ -65,6 +67,8 @@ body {
                                         	<td><?php echo $result["Firstname"];?></td>
                                         	<td><?php echo $result["Lastname"];?></td>
                                             <td><?php echo $result["Tel"];?></td>
+                                            <td><?php echo $result["email"];?></td>
+                                            <td><?php echo $result["Add_user"];?></td>
                                             <td><?php if($result["Userlevel"]==1){
                                                 echo 'Admin';
                                             }else{

@@ -133,10 +133,10 @@ if (empty($_SESSION["ID"]) || $_SESSION["Userlevel"] != 1) {
                             } elseif ($page == 'report_ship') {
                                 require_once('report_ship.php');
                             } else {
-                                require_once('home.php');
+                                // require_once('home.php');
                             }
                         } else {
-                            require_once('home.php');
+                            // require_once('home.php');
                         }
                         ?>
 
