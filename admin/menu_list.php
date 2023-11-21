@@ -49,6 +49,7 @@ body {
 	<table id="example" class="table table-striped table-bordered">
 		<thead>
 		    <th><div class="y"><b>ลำดับ</b></div></th>
+		    <th><div class="y"><b>รหัสสั่งซื้อ</b></div></th>
 			<th><div class="y"><b>วันเวลา</b></div></th>
 			<th><div class="y"><b>ลูกค้า</b></div></th>
 			<th><div class="y"><b>ราคา</b></div></th>
@@ -73,6 +74,7 @@ body {
 					?>
 					<tr>
 						<td><div class="y"><?php echo $i+1?></div></td>
+						<td><div class="y"><?php echo $row['purchaseid'] ?></div></td>
 						<td><div class="y"><?php echo date('M d, Y h:i A', strtotime($row['date_purchase'])) ?></div></td>
 						<td><div class="y"><?php echo $row['Firstname']; ?> <?php echo $row['Lastname']; ?></div></td>
 						<td class="text-right"><div class="y"><?php echo number_format($row['sum(purchase_detail.price)'], 2); ?>&#3647; </div></td>
@@ -103,7 +105,7 @@ body {
 							echo '||';
 							echo "<a href='billbuyadmin.php?b=$row[q_id]'  class='btn btn-info btn-sm' target='_blank'>แนบ</a>";
 						}elseif($row['stu']==2){
-							echo "<a href='up.php?e=$row[q_id]'  class='btn btn-info btn-sm'>จัดส่ง</a>";
+							echo "<a href='index_admin.php?p=shipping'  class='btn btn-info btn-sm'>จัดส่ง</a>";
 						}elseif($row['stu']==3){
 							echo "<a href='up.php?x=$row[q_id]'  class='btn btn-dark btn-sm'>ชำระเงินแล้ว</a>";
 						}elseif($row['stu']==4){

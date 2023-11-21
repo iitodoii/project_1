@@ -28,7 +28,7 @@ body {
                     </li>
                     <li>
                         <a href="index_admin.php?p=pro" class="nav-link px-0 text-dark align-middle">
-                        <i class="fa-solid fa-shirt"></i> <span class="ms-1 d-none d-sm-inline">จัดการสินค้า</span>
+                        <i class="fa-solid fa-shirt"></i> <span class="ms-1 d-none d-sm-inline">จัดการข้อมูลสินค้า</span>
                         </a>
                     </li>
                     <li>
@@ -54,7 +54,12 @@ body {
                     </li>
                     <li>
                         <a href="index_admin.php?p=re" class="nav-link px-0 text-dark align-middle">
-                        <i class="fa-solid fa-server"></i> <span class="ms-1 d-none d-sm-inline">จัดการประวัติการสั่งซื้อ</span>
+                        <i class="fa-solid fa-server"></i> <span class="ms-1 d-none d-sm-inline">จัดการชำระเงิน</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index_admin.php?p=re_2" class="nav-link px-0 text-dark align-middle">
+                        <i class="fa-solid fa-server"></i> <span class="ms-1 d-none d-sm-inline">ประวัติการชำระเงิน</span>
                         </a>
                     </li>
                     <li>
@@ -62,11 +67,11 @@ body {
                         <i class="fa-solid fa-city"></i> <span class="ms-1 d-none d-sm-inline">จัดการข้อมูลของร้าน</span>
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="index_admin.php?p=sumreport" class="nav-link px-0 text-dark align-middle">
-                        <i class="fa-solid fa-chart-pie"></i> <span class="ms-1 d-none d-sm-inline">สรุปรายได้</span>
+                    <li>
+                        <a href="index_admin.php?p=shipping" class="nav-link px-0 text-dark align-middle">
+                        <i class="fas fa-shipping-fast"></i> <span class="ms-1 d-none d-sm-inline">จัดการการจัดส่ง</span>
                         </a>
-                    </li> -->
+                    </li>
                     <li>
                         <a href="index_admin.php?p=report_member" class="nav-link px-0 text-dark align-middle">
                         <i class="fa-solid fa-chart-pie"></i> <span class="ms-1 d-none d-sm-inline">รายงานข้อมูลสมาชิก</span>

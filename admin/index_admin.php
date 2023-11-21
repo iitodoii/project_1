@@ -86,6 +86,8 @@ if (empty($_SESSION["ID"]) || $_SESSION["Userlevel"] != 1) {
                                 require_once('up.php');
                             } elseif ($page == 're') {
                                 require_once('report_sell.php');
+                            } elseif ($page == 're_2') {
+                                require_once('report_sell_2.php');
                             } elseif ($page == 'edituser') {
                                 require_once('EditAdmin.php');
                             } elseif ($page == 'editu') {
@@ -108,6 +110,8 @@ if (empty($_SESSION["ID"]) || $_SESSION["Userlevel"] != 1) {
                                 require_once('product_add_design.php');
                             } elseif ($page == 'connect') {
                                 require_once('addcantect.php');
+                            } elseif ($page == 'shipping') {
+                                require_once('shipping.php');
                             } elseif ($page == 'del_de') {
                                 require_once('del_de.php');
                             } elseif ($page == 'sumreport') {
