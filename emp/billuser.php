@@ -18,16 +18,16 @@
 
 <body>
     <?php
-    include('../config/server.php');
     include('nav_cart.php');
     ?><br>
 
     <!-- Sales Details -->
     <?php
+    include('../config/server.php');
     $id = $_GET['id'];
     $sql1 = "select * from purchase 
-                                left join user on user.ID = purchase.ID
-                                where q_id='" . $id . "'";
+    left join user on user.ID = purchase.ID
+    where q_id='" . $_GET['id'] . "'";
     $dquery1 = $conn->query($sql1);
     $drow1 = $dquery1->fetch_array()
     ?>

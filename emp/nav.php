@@ -33,6 +33,7 @@ body {
                         <li class="nav-item"><a class="nav-link text-dack" href="../index.php">สินค้า</a></li>
                             <?php if(!empty($_SESSION['Firstname'])) {?>
                             <li class="nav-item"><a class="nav-link" href="product_user_buy.php">รายการสั่งซื้อ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="shipping_status.php">ตรวจสอบสถานะการจัดส่ง</a></li>
                             <?php }?>
                           </li>
                         
