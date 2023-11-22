@@ -96,7 +96,7 @@ error_reporting(0);
 							echo '<a href=""  class="btn btn-dark btn-sm">รอจัดส่ง</a>';
 						}
 						elseif($row['stu']==3){
-							echo '<a href=""  class="btn btn-dark btn-sm">ชำระเงินแล้ว</a>';
+							echo '<a href=""  class="btn btn-dark btn-sm">จัดส่งแล้ว</a>';
 						}elseif($row['stu']==4){
 							echo '<a href=""  class="btn btn-dark btn-sm">เสร็จสิ้น</a>';
 						}
