@@ -34,7 +34,7 @@ body {
                              <div class="header"><br>
 							 <div class="card">
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"> 
-	<h3 class="page-header text-center x">ประวัติการสั่งซื้อ</h3>
+	<h3 class="page-header text-center x">ข้อมูลการชำระเงิน</h3>
 </div>
 	<table id="example" class="table table-striped table-bordered">
 		<thead>

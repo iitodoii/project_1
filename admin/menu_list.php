@@ -44,7 +44,7 @@ body {
 <div class="col-md-12">
 <div class="card">
     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"> 
-	<h4 class="page-header">รายการสั่งสินค้า</h4>
+	<h4 class="page-header">ข้อมูลรายการสั่งซื้อสินค้า</h4>
 	</div> 
 	<table id="example" class="table table-striped table-bordered">
 		<thead>

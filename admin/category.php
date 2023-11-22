@@ -29,7 +29,7 @@ if (empty($_SESSION["ID"]) || $_SESSION["Userlevel"] != 1 ){
     <div class="col-md-12">
     <div class="card">
     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">    
-	<h3 class="page-header">จัดการประเภทสินค้า</h3>
+	<h3 class="page-header">ประเภทสินค้า</h3>
   <a href="index_admin.php?p=cateadd" class="btn btn-primary">เพิ่มประเภทสินค้า</a>
   </div>
 
