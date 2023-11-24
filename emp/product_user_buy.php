@@ -43,6 +43,7 @@ error_reporting(0);
 			<th><div class="y"><b><b>วันเวลา</div></th>
 			<th><div class="y"><b><b>ลูกค้า</div></th>
 			<th><div class="y"><b><b>ราคา</div></th>
+			<th><div class="y"><b><b>การจัดส่ง</div></th>
 			<th><div class="y"><b><b>ค่าส่ง</div></th>
 			<th><div class="y"><b><b>สถานะ</div></th>
 			<th><div class="y"><b><b>รายละเอียดการขาย</div></th>
@@ -70,17 +71,22 @@ error_reporting(0);
 						<?php 
                                 if($row['transport']==1){
                                     $x = 50;
+                                    $transport = "จัดส่งธรรมดา";
                                 }
                                 elseif($row['transport']==2){
                                     $x = 70;
+									$transport = "จัดส่ง EMS";
                                 }
                                 elseif($row['transport']==3){
                                     $x = 70;
+									$transport = "จัดส่ง Kerry (เก็บปลายทาง)";
                                 }
                                 elseif($row['transport']==4){
                                     $x = 60;
+									$transport = "จัดส่ง J&T (เก็บปลายทาาง)";
                                 }
                         ?>
+						<td class="text-right"><div class="y"> <?php echo $transport?></div></td>
 						<td class="text-right"><div class="y"> <?php echo number_format($x, 2); ?>&#3647;</div></td>
 						<td class="text-center"><div class="y">
 						<?php if($row['stu']==0){

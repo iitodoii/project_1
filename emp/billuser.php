@@ -41,7 +41,7 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-6">
-                                        <h6 class="modal-title y" id="myModalLabel"><b>BP.SHOP</b></h6>
+                                        <h6 class="modal-title y" id="myModalLabel"><b>Jaruwan Shops</b></h6>
                                         <h6 class="modal-title y" id="myModalLabel"></h6>
                                         <h6 class="modal-title y" id="myModalLabel"></h6>
                                         <br />
@@ -153,12 +153,12 @@
                                         ?>
                                         <tr class="text-left">
                                             <td colspan="2" class="y" valign="middle" align="center" width="200">
-                                                <b>ผู้รับเงิน :</b> BP.SHOP
+                                                <b>ผู้รับเงิน :</b> Jaruwan Shops
                                             </td>
                                             <td colspan="2" class="y" align="right">
                                                 ส่วนลด
                                                 <br>
-                                                จำนวนเงินทั้งสิน
+                                                จำนวนเงินทั้งสิ้น
                                             </td>
                                             <td class="y" align="right" width="200">
                                                 &#3647; <?php echo number_format(0.00, 2) ?><br>
